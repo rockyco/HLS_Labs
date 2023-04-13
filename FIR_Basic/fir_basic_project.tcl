@@ -24,20 +24,20 @@ open_solution $solution_name
 
 # Set HLS solution properties
 set_part "xc7z020clg484-1"
-set_clock_period 10
+create_clock -period 10
 
 # Run C simulation
 csim_design
 
 # Run synthesis and export RTL
-synth_design
-export_design
+csynth_design
+#export_design
 
 # Run C/RTL co-simulation
 cosim_design
 
 # Generate HLS reports
-report_top
+#report_top
 
 # Close project
 close_project
