@@ -185,3 +185,5 @@ fir_optim3/proj_fir
 fir_optim4/proj_fir
 fir_optim5/proj_fir
 fir_optim6/proj_fir
+PolyIntrpFilter/proj_fir
+PolyDecFilter/proj_fir
