@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/imports/src/AddrDelay.vhd" \
+"../../../../project_1.srcs/sources_1/imports/src/AddrGen.vhd" \
+"../../../../project_1.srcs/sources_1/imports/src/PolyIntrpFilterPkg.vhd" \
+"../../../../project_1.srcs/sources_1/imports/src/CoefRom.vhd" \
+"../../../../project_1.srcs/sources_1/imports/src/DataDelay.vhd" \
+"../../../../project_1.srcs/sources_1/imports/src/DelayLine.vhd" \
+"../../../../project_1.srcs/sources_1/imports/src/FilterStage.vhd" \
+"../../../../project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd" \
+"../../../../project_1.srcs/sources_1/imports/src/TestPkg.vhd" \
+"../../../../project_1.srcs/sources_1/imports/src/SyncDelay.vhd" \
+"../../../../project_1.srcs/sim_1/imports/src/PolyIntrpFilter_tb.vhd" \
+
+# Do not sort compile order
+nosort

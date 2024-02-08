@@ -1,0 +1,438 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Feb  6 14:22:22 2024
+# Process ID: 18656
+# Current directory: D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log PolyIntrpFilter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PolyIntrpFilter.tcl
+# Log file: D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.runs/synth_1/PolyIntrpFilter.vds
+# Journal file: D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.runs/synth_1\vivado.jou
+# Running On: JieLeiX1C2021, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 17027 MB
+#-----------------------------------------------------------
+source PolyIntrpFilter.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1002.578 ; gain = 117.969
+Command: read_checkpoint -auto_incremental -incremental D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/utils_1/imports/synth_1/PolyIntrpFilter.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/utils_1/imports/synth_1/PolyIntrpFilter.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top PolyIntrpFilter -part xczu28dr-ffvg1517-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2208
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2495.605 ; gain = 360.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PolyIntrpFilter' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:47]
+	Parameter Width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'DataDelay' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/DataDelay.vhd:30' bound to instance 'U0' of component 'DataDelay' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'DataDelay' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/DataDelay.vhd:44]
+	Parameter Width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DataDelay' (0#1) [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/DataDelay.vhd:44]
+	Parameter Depth bound to: 2 - type: integer 
+	Parameter Width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'DelayLine' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/DelayLine.vhd:31' bound to instance 'U0' of component 'DelayLine' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'DelayLine' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/DelayLine.vhd:45]
+	Parameter Depth bound to: 2 - type: integer 
+	Parameter Width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DelayLine' (0#1) [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/DelayLine.vhd:45]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter CoefWidth bound to: 16 - type: integer 
+	Parameter IntrpFactor bound to: 9 - type: integer 
+	Parameter Stage bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'CoefRom' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/CoefRom.vhd:32' bound to instance 'U1' of component 'CoefRom' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'CoefRom' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/CoefRom.vhd:48]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter CoefWidth bound to: 16 - type: integer 
+	Parameter IntrpFactor bound to: 9 - type: integer 
+	Parameter Stage bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'CoefRom' (0#1) [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/CoefRom.vhd:48]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter CoefWidth bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'FilterStage' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/FilterStage.vhd:31' bound to instance 'U2' of component 'FilterStage' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:218]
+INFO: [Synth 8-638] synthesizing module 'FilterStage' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/FilterStage.vhd:48]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter CoefWidth bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FilterStage' (0#1) [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/FilterStage.vhd:48]
+	Parameter Width bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'AddrDelay' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/AddrDelay.vhd:31' bound to instance 'U3' of component 'AddrDelay' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:233]
+INFO: [Synth 8-638] synthesizing module 'AddrDelay' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/AddrDelay.vhd:45]
+	Parameter Width bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'AddrDelay' (0#1) [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/AddrDelay.vhd:45]
+INFO: [Synth 8-3491] module 'SyncDelay' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/SyncDelay.vhd:31' bound to instance 'U4' of component 'SyncDelay' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:245]
+INFO: [Synth 8-638] synthesizing module 'SyncDelay' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/SyncDelay.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'SyncDelay' (0#1) [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/SyncDelay.vhd:40]
+	Parameter Depth bound to: 2 - type: integer 
+	Parameter Width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'DelayLine' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/DelayLine.vhd:31' bound to instance 'U0' of component 'DelayLine' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:191]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter CoefWidth bound to: 16 - type: integer 
+	Parameter IntrpFactor bound to: 9 - type: integer 
+	Parameter Stage bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'CoefRom' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/CoefRom.vhd:32' bound to instance 'U1' of component 'CoefRom' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'CoefRom__parameterized1' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/CoefRom.vhd:48]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter CoefWidth bound to: 16 - type: integer 
+	Parameter IntrpFactor bound to: 9 - type: integer 
+	Parameter Stage bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'CoefRom__parameterized1' (0#1) [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/CoefRom.vhd:48]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter CoefWidth bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'FilterStage' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/FilterStage.vhd:31' bound to instance 'U2' of component 'FilterStage' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:218]
+	Parameter Width bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'AddrDelay' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/AddrDelay.vhd:31' bound to instance 'U3' of component 'AddrDelay' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:233]
+INFO: [Synth 8-3491] module 'SyncDelay' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/SyncDelay.vhd:31' bound to instance 'U4' of component 'SyncDelay' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:245]
+	Parameter Depth bound to: 2 - type: integer 
+	Parameter Width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'DelayLine' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/DelayLine.vhd:31' bound to instance 'U0' of component 'DelayLine' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:191]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter CoefWidth bound to: 16 - type: integer 
+	Parameter IntrpFactor bound to: 9 - type: integer 
+	Parameter Stage bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'CoefRom' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/CoefRom.vhd:32' bound to instance 'U1' of component 'CoefRom' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'CoefRom__parameterized3' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/CoefRom.vhd:48]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter CoefWidth bound to: 16 - type: integer 
+	Parameter IntrpFactor bound to: 9 - type: integer 
+	Parameter Stage bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'CoefRom__parameterized3' (0#1) [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/CoefRom.vhd:48]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter CoefWidth bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'FilterStage' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/FilterStage.vhd:31' bound to instance 'U2' of component 'FilterStage' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:218]
+	Parameter Width bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'AddrDelay' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/AddrDelay.vhd:31' bound to instance 'U3' of component 'AddrDelay' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:233]
+INFO: [Synth 8-3491] module 'SyncDelay' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/SyncDelay.vhd:31' bound to instance 'U4' of component 'SyncDelay' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:245]
+	Parameter Depth bound to: 2 - type: integer 
+	Parameter Width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'DelayLine' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/DelayLine.vhd:31' bound to instance 'U0' of component 'DelayLine' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:191]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter CoefWidth bound to: 16 - type: integer 
+	Parameter IntrpFactor bound to: 9 - type: integer 
+	Parameter Stage bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'CoefRom' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/CoefRom.vhd:32' bound to instance 'U1' of component 'CoefRom' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'CoefRom__parameterized5' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/CoefRom.vhd:48]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter CoefWidth bound to: 16 - type: integer 
+	Parameter IntrpFactor bound to: 9 - type: integer 
+	Parameter Stage bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'CoefRom__parameterized5' (0#1) [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/CoefRom.vhd:48]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter CoefWidth bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'FilterStage' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/FilterStage.vhd:31' bound to instance 'U2' of component 'FilterStage' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:218]
+	Parameter Width bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'AddrDelay' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/AddrDelay.vhd:31' bound to instance 'U3' of component 'AddrDelay' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:233]
+INFO: [Synth 8-3491] module 'SyncDelay' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/SyncDelay.vhd:31' bound to instance 'U4' of component 'SyncDelay' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:245]
+	Parameter Depth bound to: 2 - type: integer 
+	Parameter Width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'DelayLine' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/DelayLine.vhd:31' bound to instance 'U0' of component 'DelayLine' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:191]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter CoefWidth bound to: 16 - type: integer 
+	Parameter IntrpFactor bound to: 9 - type: integer 
+	Parameter Stage bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'CoefRom' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/CoefRom.vhd:32' bound to instance 'U1' of component 'CoefRom' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'CoefRom__parameterized7' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/CoefRom.vhd:48]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter CoefWidth bound to: 16 - type: integer 
+	Parameter IntrpFactor bound to: 9 - type: integer 
+	Parameter Stage bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'CoefRom__parameterized7' (0#1) [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/CoefRom.vhd:48]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter CoefWidth bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'FilterStage' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/FilterStage.vhd:31' bound to instance 'U2' of component 'FilterStage' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:218]
+	Parameter Width bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'AddrDelay' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/AddrDelay.vhd:31' bound to instance 'U3' of component 'AddrDelay' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:233]
+INFO: [Synth 8-3491] module 'SyncDelay' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/SyncDelay.vhd:31' bound to instance 'U4' of component 'SyncDelay' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:245]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter IntrpFactor bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'AddrGen' declared at 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/AddrGen.vhd:32' bound to instance 'U5' of component 'AddrGen' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:256]
+INFO: [Synth 8-638] synthesizing module 'AddrGen' [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/AddrGen.vhd:47]
+	Parameter AddrWidth bound to: 3 - type: integer 
+	Parameter IntrpFactor bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'AddrGen' (0#1) [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/AddrGen.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'PolyIntrpFilter' (0#1) [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/sources_1/imports/src/PolyIntrpFilter.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2570.605 ; gain = 435.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2588.531 ; gain = 453.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2588.531 ; gain = 453.645
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2588.531 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/constrs_1/new/intrpFilter.xdc]
+create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2714.598 ; gain = 17.938
+Finished Parsing XDC File [D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.srcs/constrs_1/new/intrpFilter.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2714.598 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2714.598 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 2714.598 ; gain = 579.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 2714.598 ; gain = 579.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 2714.598 ; gain = 579.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 2714.598 ; gain = 579.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 5     
+	               16 Bit    Registers := 11    
+	               14 Bit    Registers := 3     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                3 Bit    Registers := 6     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   8 Input   14 Bit        Muxes := 3     
+	   8 Input   12 Bit        Muxes := 1     
+	   8 Input   11 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP L0[0].U2/sum_r_reg, operation Mode is: (A2*B2)'.
+DSP Report: register L0[0].U1/dout_reg is absorbed into DSP L0[0].U2/sum_r_reg.
+DSP Report: register U0/dout_reg is absorbed into DSP L0[0].U2/sum_r_reg.
+DSP Report: register L0[0].U2/sum_r_reg is absorbed into DSP L0[0].U2/sum_r_reg.
+DSP Report: register L0[0].U2/mult_r_reg is absorbed into DSP L0[0].U2/sum_r_reg.
+DSP Report: operator L0[0].U2/plusOp is absorbed into DSP L0[0].U2/sum_r_reg.
+DSP Report: operator L0[0].U2/multOp is absorbed into DSP L0[0].U2/sum_r_reg.
+DSP Report: Generating DSP L0[1].U2/sum_r_reg, operation Mode is: (PCIN+(ACIN''*B2)')'.
+DSP Report: register L0[1].U1/dout_reg is absorbed into DSP L0[1].U2/sum_r_reg.
+DSP Report: register L0[0].U0/DataBuffer_reg[0] is absorbed into DSP L0[1].U2/sum_r_reg.
+DSP Report: register L0[0].U0/DataBuffer_reg[1] is absorbed into DSP L0[1].U2/sum_r_reg.
+DSP Report: register L0[1].U2/sum_r_reg is absorbed into DSP L0[1].U2/sum_r_reg.
+DSP Report: register L0[1].U2/mult_r_reg is absorbed into DSP L0[1].U2/sum_r_reg.
+DSP Report: operator L0[1].U2/plusOp is absorbed into DSP L0[1].U2/sum_r_reg.
+DSP Report: operator L0[1].U2/multOp is absorbed into DSP L0[1].U2/sum_r_reg.
+DSP Report: Generating DSP L0[2].U2/sum_r_reg, operation Mode is: (PCIN+(ACIN''*B2)')'.
+DSP Report: register L0[2].U1/dout_reg is absorbed into DSP L0[2].U2/sum_r_reg.
+DSP Report: register L0[1].U0/DataBuffer_reg[0] is absorbed into DSP L0[2].U2/sum_r_reg.
+DSP Report: register L0[1].U0/DataBuffer_reg[1] is absorbed into DSP L0[2].U2/sum_r_reg.
+DSP Report: register L0[2].U2/sum_r_reg is absorbed into DSP L0[2].U2/sum_r_reg.
+DSP Report: register L0[2].U2/mult_r_reg is absorbed into DSP L0[2].U2/sum_r_reg.
+DSP Report: operator L0[2].U2/plusOp is absorbed into DSP L0[2].U2/sum_r_reg.
+DSP Report: operator L0[2].U2/multOp is absorbed into DSP L0[2].U2/sum_r_reg.
+DSP Report: Generating DSP L0[3].U2/sum_r_reg, operation Mode is: (PCIN+(ACIN''*B2)')'.
+DSP Report: register L0[3].U1/dout_reg is absorbed into DSP L0[3].U2/sum_r_reg.
+DSP Report: register L0[2].U0/DataBuffer_reg[0] is absorbed into DSP L0[3].U2/sum_r_reg.
+DSP Report: register L0[2].U0/DataBuffer_reg[1] is absorbed into DSP L0[3].U2/sum_r_reg.
+DSP Report: register L0[3].U2/sum_r_reg is absorbed into DSP L0[3].U2/sum_r_reg.
+DSP Report: register L0[3].U2/mult_r_reg is absorbed into DSP L0[3].U2/sum_r_reg.
+DSP Report: operator L0[3].U2/plusOp is absorbed into DSP L0[3].U2/sum_r_reg.
+DSP Report: operator L0[3].U2/multOp is absorbed into DSP L0[3].U2/sum_r_reg.
+DSP Report: Generating DSP L0[4].U2/sum_r_reg, operation Mode is: (PCIN+(ACIN''*B2)')'.
+DSP Report: register L0[4].U1/dout_reg is absorbed into DSP L0[4].U2/sum_r_reg.
+DSP Report: register L0[3].U0/DataBuffer_reg[0] is absorbed into DSP L0[4].U2/sum_r_reg.
+DSP Report: register L0[3].U0/DataBuffer_reg[1] is absorbed into DSP L0[4].U2/sum_r_reg.
+DSP Report: register L0[4].U2/sum_r_reg is absorbed into DSP L0[4].U2/sum_r_reg.
+DSP Report: register L0[4].U2/mult_r_reg is absorbed into DSP L0[4].U2/sum_r_reg.
+DSP Report: operator L0[4].U2/plusOp is absorbed into DSP L0[4].U2/sum_r_reg.
+DSP Report: operator L0[4].U2/multOp is absorbed into DSP L0[4].U2/sum_r_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 2714.598 ; gain = 579.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++----------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping          | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|PolyIntrpFilter | (A2*B2)'             | 16     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|PolyIntrpFilter | (PCIN+(ACIN''*B2)')' | 16     | 12     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|PolyIntrpFilter | (PCIN+(ACIN''*B2)')' | 16     | 14     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|PolyIntrpFilter | (PCIN+(ACIN''*B2)')' | 16     | 14     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|PolyIntrpFilter | (PCIN+(ACIN''*B2)')' | 16     | 14     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 1    | 
++----------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 3063.109 ; gain = 928.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 3063.109 ; gain = 928.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 3073.215 ; gain = 938.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:56 . Memory (MB): peak = 3079.969 ; gain = 945.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:56 . Memory (MB): peak = 3079.969 ; gain = 945.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:56 . Memory (MB): peak = 3079.969 ; gain = 945.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:56 . Memory (MB): peak = 3079.969 ; gain = 945.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:56 . Memory (MB): peak = 3079.969 ; gain = 945.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:56 . Memory (MB): peak = 3079.969 ; gain = 945.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|PolyIntrpFilter | ((A'*B')')'       | 30     | 10     | -      | -      | 0      | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|PolyIntrpFilter | (PCIN+(A''*B')')' | 0      | 18     | -      | -      | 0      | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|PolyIntrpFilter | (PCIN+(A''*B')')' | 0      | 18     | -      | -      | 0      | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|PolyIntrpFilter | (PCIN+(A''*B')')' | 0      | 18     | -      | -      | 0      | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|PolyIntrpFilter | (PCIN+(A''*B')')' | 0      | 18     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 1    | 
++----------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |BUFG            |     1|
+|2     |DSP_ALU         |     5|
+|3     |DSP_A_B_DATA    |     5|
+|5     |DSP_C_DATA      |     5|
+|6     |DSP_MULTIPLIER  |     5|
+|7     |DSP_M_DATA      |     5|
+|8     |DSP_OUTPUT      |     5|
+|9     |DSP_PREADD      |     5|
+|10    |DSP_PREADD_DATA |     5|
+|11    |LUT1            |     3|
+|12    |LUT2            |     5|
+|13    |LUT3            |    50|
+|14    |FDRE            |    15|
+|15    |IBUF            |    19|
+|16    |OBUF            |    48|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:56 . Memory (MB): peak = 3079.969 ; gain = 945.082
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:45 . Memory (MB): peak = 3079.969 ; gain = 819.016
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:56 . Memory (MB): peak = 3079.969 ; gain = 945.082
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3092.047 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3135.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 25 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 5 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 19 instances
+
+Synth Design complete, checksum: 52cd1914
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:33 . Memory (MB): peak = 3135.637 ; gain = 2108.227
+INFO: [Common 17-1381] The checkpoint 'D:/Projects/VivadoProj/UTS/PolyIntrpFilter/project_1/project_1.runs/synth_1/PolyIntrpFilter.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PolyIntrpFilter_utilization_synth.rpt -pb PolyIntrpFilter_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  6 14:24:09 2024...

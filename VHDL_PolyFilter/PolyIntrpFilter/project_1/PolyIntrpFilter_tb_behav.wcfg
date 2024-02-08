@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="PolyIntrpFilter_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="PolyIntrpFilter_tb" />
+            <top_module name="polyintrpfilterpkg" />
+            <top_module name="testpkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,000.000 ns"></ZoomEndTime>
+      <Cursor1Time time="380.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="378"></NameColumnWidth>
+      <ValueColumnWidth column_width="174"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="68" />
+   <wvobject fp_name="/PolyIntrpFilter_tb/din" type="array">
+      <obj_property name="ElementShortName">din[15:0]</obj_property>
+      <obj_property name="ObjectShortName">din[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dout" type="array">
+      <obj_property name="ElementShortName">dout[47:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/DataWidth" type="other">
+      <obj_property name="ElementShortName">DataWidth</obj_property>
+      <obj_property name="ObjectShortName">DataWidth</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/CoefWidth" type="other">
+      <obj_property name="ElementShortName">CoefWidth</obj_property>
+      <obj_property name="ObjectShortName">CoefWidth</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/IntrpFactor" type="other">
+      <obj_property name="ElementShortName">IntrpFactor</obj_property>
+      <obj_property name="ObjectShortName">IntrpFactor</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/AddrWidth" type="other">
+      <obj_property name="ElementShortName">AddrWidth</obj_property>
+      <obj_property name="ObjectShortName">AddrWidth</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/NumStages" type="other">
+      <obj_property name="ElementShortName">NumStages</obj_property>
+      <obj_property name="ObjectShortName">NumStages</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/Tck" type="other">
+      <obj_property name="ElementShortName">Tck</obj_property>
+      <obj_property name="ObjectShortName">Tck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/Tpw" type="other">
+      <obj_property name="ElementShortName">Tpw</obj_property>
+      <obj_property name="ObjectShortName">Tpw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/Tcko" type="other">
+      <obj_property name="ElementShortName">Tcko</obj_property>
+      <obj_property name="ObjectShortName">Tcko</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(0)\/U2/ain" type="array">
+      <obj_property name="ElementShortName">ain[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ain[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(0)\/U2/bin" type="array">
+      <obj_property name="ElementShortName">bin[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bin[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(0)\/U2/cin" type="array">
+      <obj_property name="ElementShortName">cin[47:0]</obj_property>
+      <obj_property name="ObjectShortName">cin[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(0)\/U2/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(0)\/U2/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(0)\/U2/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(0)\/U2/dout" type="array">
+      <obj_property name="ElementShortName">dout[47:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(0)\/U2/mult_r" type="array">
+      <obj_property name="ElementShortName">mult_r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_r[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(0)\/U2/sum_r" type="array">
+      <obj_property name="ElementShortName">sum_r[47:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_r[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(0)\/U2/DataWidth" type="other">
+      <obj_property name="ElementShortName">DataWidth</obj_property>
+      <obj_property name="ObjectShortName">DataWidth</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(0)\/U2/CoefWidth" type="other">
+      <obj_property name="ElementShortName">CoefWidth</obj_property>
+      <obj_property name="ObjectShortName">CoefWidth</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(1)\/U2/ain" type="array">
+      <obj_property name="ElementShortName">ain[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ain[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(1)\/U2/bin" type="array">
+      <obj_property name="ElementShortName">bin[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bin[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(1)\/U2/cin" type="array">
+      <obj_property name="ElementShortName">cin[47:0]</obj_property>
+      <obj_property name="ObjectShortName">cin[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(1)\/U2/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(1)\/U2/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(1)\/U2/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(1)\/U2/dout" type="array">
+      <obj_property name="ElementShortName">dout[47:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(1)\/U2/mult_r" type="array">
+      <obj_property name="ElementShortName">mult_r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_r[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(1)\/U2/sum_r" type="array">
+      <obj_property name="ElementShortName">sum_r[47:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_r[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(1)\/U2/DataWidth" type="other">
+      <obj_property name="ElementShortName">DataWidth</obj_property>
+      <obj_property name="ObjectShortName">DataWidth</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(1)\/U2/CoefWidth" type="other">
+      <obj_property name="ElementShortName">CoefWidth</obj_property>
+      <obj_property name="ObjectShortName">CoefWidth</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(2)\/U2/ain" type="array">
+      <obj_property name="ElementShortName">ain[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ain[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(2)\/U2/bin" type="array">
+      <obj_property name="ElementShortName">bin[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bin[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(2)\/U2/cin" type="array">
+      <obj_property name="ElementShortName">cin[47:0]</obj_property>
+      <obj_property name="ObjectShortName">cin[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(2)\/U2/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(2)\/U2/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(2)\/U2/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(2)\/U2/dout" type="array">
+      <obj_property name="ElementShortName">dout[47:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(2)\/U2/mult_r" type="array">
+      <obj_property name="ElementShortName">mult_r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_r[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(2)\/U2/sum_r" type="array">
+      <obj_property name="ElementShortName">sum_r[47:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_r[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(2)\/U2/DataWidth" type="other">
+      <obj_property name="ElementShortName">DataWidth</obj_property>
+      <obj_property name="ObjectShortName">DataWidth</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(2)\/U2/CoefWidth" type="other">
+      <obj_property name="ElementShortName">CoefWidth</obj_property>
+      <obj_property name="ObjectShortName">CoefWidth</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(3)\/U2/ain" type="array">
+      <obj_property name="ElementShortName">ain[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ain[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(3)\/U2/bin" type="array">
+      <obj_property name="ElementShortName">bin[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bin[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(3)\/U2/cin" type="array">
+      <obj_property name="ElementShortName">cin[47:0]</obj_property>
+      <obj_property name="ObjectShortName">cin[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(3)\/U2/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(3)\/U2/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(3)\/U2/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(3)\/U2/dout" type="array">
+      <obj_property name="ElementShortName">dout[47:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(3)\/U2/mult_r" type="array">
+      <obj_property name="ElementShortName">mult_r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_r[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(3)\/U2/sum_r" type="array">
+      <obj_property name="ElementShortName">sum_r[47:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_r[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(3)\/U2/DataWidth" type="other">
+      <obj_property name="ElementShortName">DataWidth</obj_property>
+      <obj_property name="ObjectShortName">DataWidth</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(3)\/U2/CoefWidth" type="other">
+      <obj_property name="ElementShortName">CoefWidth</obj_property>
+      <obj_property name="ObjectShortName">CoefWidth</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(4)\/U2/ain" type="array">
+      <obj_property name="ElementShortName">ain[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ain[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(4)\/U2/bin" type="array">
+      <obj_property name="ElementShortName">bin[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bin[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(4)\/U2/cin" type="array">
+      <obj_property name="ElementShortName">cin[47:0]</obj_property>
+      <obj_property name="ObjectShortName">cin[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(4)\/U2/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(4)\/U2/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(4)\/U2/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(4)\/U2/dout" type="array">
+      <obj_property name="ElementShortName">dout[47:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(4)\/U2/mult_r" type="array">
+      <obj_property name="ElementShortName">mult_r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_r[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(4)\/U2/sum_r" type="array">
+      <obj_property name="ElementShortName">sum_r[47:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_r[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(4)\/U2/DataWidth" type="other">
+      <obj_property name="ElementShortName">DataWidth</obj_property>
+      <obj_property name="ObjectShortName">DataWidth</obj_property>
+   </wvobject>
+   <wvobject fp_name="/PolyIntrpFilter_tb/dut/\L0(4)\/U2/CoefWidth" type="other">
+      <obj_property name="ElementShortName">CoefWidth</obj_property>
+      <obj_property name="ObjectShortName">CoefWidth</obj_property>
+   </wvobject>
+</wave_config>
